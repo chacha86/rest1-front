@@ -18,7 +18,7 @@ export default function Home() {
     <div className="flex flex-col gap-9">
       <h1>글 목록</h1>
       <ul>
-        {posts.map((post: any) => (
+        {posts.map((post: { id: number; title: string }) => (
           <li key={post.id}>
             {post.id} : {post.title}
           </li>
